@@ -1,14 +1,18 @@
 package com.dotzipfile.coding_problems;
 
-import com.dotzipfile.coding_problems.day1.SolutionDayOne;
+import com.dotzipfile.coding_problems.day2.SolutionDayTwo;
 
 public class Main {
 
 	public static void main(String[] args) {
-		int[] arr = {2, 5, 9, 1};
-		int k = 2;
+		int[] arr = {2};
 
-		SolutionDayOne sol1 = new SolutionDayOne();
-		System.out.println(sol1.solve(arr, k));
+		SolutionDayTwo sol2 = new SolutionDayTwo();
+		int[] prodArr = sol2.solve(arr);
+
+		for(int item: prodArr) {
+
+			System.out.println(item);
+		}
 	}
 }
